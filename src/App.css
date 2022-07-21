@@ -1,3 +1,153 @@
-.App {
+html {
+  background-image: url('./images/background.png');
+  color: white;
+}
+
+@keyframes girando {
+
+  0% { transform: rotate(0); }
+
+  100% { transform: rotate(360deg); }
+}
+
+header {
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 5px rgba(251, 241, 241, 0.905);
+  margin: auto;
   text-align: center;
+  width: 500px;
+}
+
+h2 {
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 4px 1px 5px 5px rgba(251, 241, 241, 0.905);
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  width: 500px;
+}
+
+#planetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img {
+  animation: girando 7s linear infinite;
+}
+
+.planeta {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+
+}
+
+#container-missions {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
+}
+
+#missions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 10px;
+
+}
+
+p {
+  font-weight: 700;
+}
+
+.mission {
+  background-color: rgba(10, 23, 55, 0.5);
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 2px 2px white;
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+.mission:hover {
+  background-color: rgba(10,23,55,1);
+}
+
+#Mercúrio {
+  margin-top: 30px;
+  width: 50px;
+}
+
+#Mercúrio:hover {
+  width: 65px;
+}
+
+#Vênus {
+  margin-top: 15px;
+  width: 90px;
+}
+
+#Vênus:hover {
+  width: 105px;
+}
+
+#Terra {
+  margin-top: 10px;
+  width: 100px;
+}
+
+#Terra:hover {
+  width: 120px;
+}
+
+#Marte {
+  margin-top: 25px;
+  width: 70px;
+}
+
+#Marte:hover {
+  width: 90px;
+}
+
+#Júpiter {
+  width: 150px
+}
+
+#Júpiter:hover {
+  width: 165px;
+}
+
+#Saturno {
+  width: 150px;
+}
+
+#Saturno:hover {
+  width: 165px;
+}
+
+#Urano {
+  margin-top: 10px;
+  width: 120px;
+}
+
+#Urano:hover {
+  width: 140px;
+}
+
+#Netuno {
+  width: 110px;
+  margin-top: 15px;
+}
+
+#Netuno:hover {
+  width: 130px;
 }
